@@ -113,6 +113,7 @@ GuaNodeDraw(GuaNode *node) {
     DrawTexturePro(texture, src, dest, origin, angle*57.30f, WHITE);
 }
 
+
 GuaNode *
 GuaNodeCircleNew(cpSpace *space, const char *path) {
     // 物体质量，别管单位是什么
@@ -145,9 +146,12 @@ GuaNodeBoxNew(cpSpace *space, const char *path) {
     float moment = 10;
     
     GuaNode *n = malloc(sizeof(GuaNode));
+    
+    // 贴图 用来显示的...
     Texture2D texture = LoadTexture(path);
     n->texture = texture;
     
+    // body是物理世界来用的，比如质量什么的
     cpBody *body = cpSpaceAddBody(space, cpBodyNew(mass, moment));
     n->body = body;
     
@@ -155,6 +159,7 @@ GuaNodeBoxNew(cpSpace *space, const char *path) {
     float h = ptm(texture.height);
     float radius = ptm(1.0);
     
+    // 形状是用来描述样形状的
     cpShape *shape = cpSpaceAddShape(space, cpBoxShapeNew(body, w, h, radius));
     n->shape = shape;
     

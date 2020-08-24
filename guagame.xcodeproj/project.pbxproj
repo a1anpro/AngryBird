@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B13F55D24EF936900C3B31E /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B13F55C24EF936900C3B31E /* utils.c */; };
+		2B13F56024EFBE5000C3B31E /* guaList.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B13F55F24EFBE5000C3B31E /* guaList.c */; };
+		2B13F56324EFBE5D00C3B31E /* guaScene.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B13F56224EFBE5D00C3B31E /* guaScene.c */; };
 		3C313A2A24ECCC3B00D0DC73 /* libChipmunk-Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C313A2924ECCC3B00D0DC73 /* libChipmunk-Mac.a */; };
 		C24917BA24E92502009738E6 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C24917B924E92502009738E6 /* main.c */; };
 		C24917C424E925D3009738E6 /* libraylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C24917C324E925D3009738E6 /* libraylib.a */; };
@@ -30,6 +33,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B13F55B24EF936900C3B31E /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		2B13F55C24EF936900C3B31E /* utils.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = utils.c; sourceTree = "<group>"; };
+		2B13F55E24EFBE5000C3B31E /* guaList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = guaList.h; sourceTree = "<group>"; };
+		2B13F55F24EFBE5000C3B31E /* guaList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = guaList.c; sourceTree = "<group>"; };
+		2B13F56124EFBE5D00C3B31E /* guaScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = guaScene.h; sourceTree = "<group>"; };
+		2B13F56224EFBE5D00C3B31E /* guaScene.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = guaScene.c; sourceTree = "<group>"; };
 		3C313A2924ECCC3B00D0DC73 /* libChipmunk-Mac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libChipmunk-Mac.a"; path = "guagame/libs/libChipmunk-Mac.a"; sourceTree = "<group>"; };
 		3C313A2F24ED6DE500D0DC73 /* libbox2d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbox2d.a; path = guagame/libs/libbox2d.a; sourceTree = "<group>"; };
 		C24917B624E92502009738E6 /* guagame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = guagame; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +96,12 @@
 			isa = PBXGroup;
 			children = (
 				C24917B924E92502009738E6 /* main.c */,
+				2B13F55B24EF936900C3B31E /* utils.h */,
+				2B13F55C24EF936900C3B31E /* utils.c */,
+				2B13F55E24EFBE5000C3B31E /* guaList.h */,
+				2B13F55F24EFBE5000C3B31E /* guaList.c */,
+				2B13F56124EFBE5D00C3B31E /* guaScene.h */,
+				2B13F56224EFBE5D00C3B31E /* guaScene.c */,
 			);
 			path = guagame;
 			sourceTree = "<group>";
@@ -183,7 +198,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B13F56024EFBE5000C3B31E /* guaList.c in Sources */,
 				C24917BA24E92502009738E6 /* main.c in Sources */,
+				2B13F56324EFBE5D00C3B31E /* guaScene.c in Sources */,
+				2B13F55D24EF936900C3B31E /* utils.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -4,34 +4,6 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
-//void
-//func(char *str) {
-//    char *ptr;
-//    ptr = strtok(str, " ");
-//
-//    int i = 0;
-//    int x = 0;
-//    int y = 0;
-//    char type[] = "xxxxxxxxxxx";
-//
-//    while (ptr != NULL) {
-//        if (i == 0) {
-//            x = atoi(ptr);
-//        } else if (i == 1) {
-//            y = atoi(ptr);
-//        } else if (i == 2){
-//            int len = strlen(ptr);
-//            int j;
-//            for (j = 0; j < len; j += 1) {
-//                type[j] = ptr[j];
-//            }
-//            type[j] = '\0';
-//        }
-//        ptr = strtok(NULL, " ");
-//        i += 1;
-//    }
-//    printf("(%d, %d, %s)\n", x, y, type);
-//}
 
 long int
 getCreateTime() {
@@ -170,20 +142,19 @@ main(int argc, const char * argv[]) {
 //    char config[] = "100 00 1";
 //    addNodeByConfig(config, list, space);
     
-    // todo: space可以共用
-    // addNode(BIRD, list, space);
-    
-    // 特殊对象 单独加
+    // 先落
+    addNode(BASE, 0, 150, list, space);
+    // 特殊对象 单独加，小鸟后落
     GuaNode *bird = GuaNodeNew(space, imgPaths[BIRD]);
-    GuaNodeSetPosition(bird, 150, 200);
+    GuaNodeSetPosition(bird, 20, 00);
     addNodeToList(bird, list);
     cpShapeSetCollisionType(bird->shape, 100);
     
-    addNode(BASE, 350, 150, list, space);
+    addNode(PIG, 350, 30, list, space);
     addNode(BLOCK3, 380, 100, list, space);
     addNode(BLOCK3, 320, 100, list, space);
     addNode(BLOCK1V, 350, 60, list, space);
-    addNode(PIG, 350, 30, list, space);
+    
     
     cpCollisionHandler *handler = cpSpaceAddCollisionHandler(space, 100, 0);
     handler->beginFunc = begin;
