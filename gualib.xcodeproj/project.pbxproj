@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2245F80524ED4350005B5B95 /* libgualang.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2245F80424ED4350005B5B95 /* libgualang.dylib */; };
+		2245F80824ED436B005B5B95 /* libgualang.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 2245F80424ED4350005B5B95 /* libgualang.dylib */; };
+		22F31A7B24ED512B00A83E4C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 22F31A7A24ED512B00A83E4C /* main.c */; };
+		2B824B8B24F3BDF40025F14A /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B824B8A24F3BDF40025F14A /* OpenGL.framework */; };
+		2B824B8D24F3BDFB0025F14A /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B824B8C24F3BDFB0025F14A /* GLUT.framework */; };
+		2B824B8F24F3BE010025F14A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B824B8E24F3BE010025F14A /* Cocoa.framework */; };
+		2B824B9124F3BE070025F14A /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B824B9024F3BE060025F14A /* IOKit.framework */; };
+		2B824B9324F3BE0D0025F14A /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B824B9224F3BE0D0025F14A /* CoreVideo.framework */; };
+		2B824B9524F3BE210025F14A /* libraylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B824B9424F3BE210025F14A /* libraylib.a */; };
+		2B824B9724F3BE2D0025F14A /* libChipmunk-Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B824B9624F3BE2C0025F14A /* libChipmunk-Mac.a */; };
+		2B824B9B24F3BE6D0025F14A /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B824B9A24F3BE6D0025F14A /* utils.c */; };
+		2B824B9E24F3BE8E0025F14A /* guaList.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B824B9D24F3BE8E0025F14A /* guaList.c */; };
+		2B824BA124F3BEAB0025F14A /* guaScene.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B824BA024F3BEAB0025F14A /* guaScene.c */; };
+		2B824BBB24F3C0130025F14A /* resources in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B824BBA24F3BFFA0025F14A /* resources */; };
+		BF2EA43824F00D65004D8E5A /* test.gua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2245F7FF24ED40E2005B5B95 /* test.gua */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0066468E24EC31EF00B7C3DF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				2B824BBB24F3C0130025F14A /* resources in CopyFiles */,
+				BF2EA43824F00D65004D8E5A /* test.gua in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2245F80924ED436B005B5B95 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2245F80824ED436B005B5B95 /* libgualang.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0066469024EC31EF00B7C3DF /* gualib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = gualib; sourceTree = BUILT_PRODUCTS_DIR; };
+		2245F7D424ED3EDC005B5B95 /* GLModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLModule.h; sourceTree = "<group>"; };
+		2245F7D524ED3EDC005B5B95 /* GuaFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuaFoundation.h; sourceTree = "<group>"; };
+		2245F7D624ED3EDC005B5B95 /* GLLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLLibrary.h; sourceTree = "<group>"; };
+		2245F7D724ED3EDC005B5B95 /* GLFFIType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLFFIType.h; sourceTree = "<group>"; };
+		2245F7D824ED3EDC005B5B95 /* GLString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLString.h; sourceTree = "<group>"; };
+		2245F7D924ED3EDC005B5B95 /* GLVariable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLVariable.h; sourceTree = "<group>"; };
+		2245F7DA24ED3EDC005B5B95 /* GuaType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuaType.h; sourceTree = "<group>"; };
+		2245F7DB24ED3EDC005B5B95 /* GuaFree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuaFree.h; sourceTree = "<group>"; };
+		2245F7DC24ED3EDC005B5B95 /* GLValueCreate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLValueCreate.h; sourceTree = "<group>"; };
+		2245F7DE24ED3EDC005B5B95 /* GLValueObjectBuiltin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLValueObjectBuiltin.h; sourceTree = "<group>"; };
+		2245F7DF24ED3EDC005B5B95 /* GuaMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuaMap.h; sourceTree = "<group>"; };
+		2245F7E024ED3EDC005B5B95 /* GuaArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuaArray.h; sourceTree = "<group>"; };
+		2245F7E124ED3EDC005B5B95 /* GLValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLValue.h; sourceTree = "<group>"; };
+		2245F7E224ED3EDC005B5B95 /* GuaString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuaString.h; sourceTree = "<group>"; };
+		2245F7E324ED3EDC005B5B95 /* GLObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLObject.h; sourceTree = "<group>"; };
+		2245F7E424ED3EDC005B5B95 /* GLMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLMap.h; sourceTree = "<group>"; };
+		2245F7E524ED3EDC005B5B95 /* GLLibraryPython.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLLibraryPython.h; sourceTree = "<group>"; };
+		2245F7E624ED3EDC005B5B95 /* GLFunctionBuiltinLegacy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLFunctionBuiltinLegacy.h; sourceTree = "<group>"; };
+		2245F7E724ED3EDC005B5B95 /* _GLValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _GLValue.h; sourceTree = "<group>"; };
+		2245F7E824ED3EDC005B5B95 /* GLValueOperators.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLValueOperators.h; sourceTree = "<group>"; };
+		2245F7E924ED3EDC005B5B95 /* GuaConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuaConfig.h; sourceTree = "<group>"; };
+		2245F7EA24ED3EDC005B5B95 /* GLStruct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLStruct.h; sourceTree = "<group>"; };
+		2245F7EB24ED3EDC005B5B95 /* GLFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLFunction.h; sourceTree = "<group>"; };
+		2245F7EC24ED3EDC005B5B95 /* GLArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLArray.h; sourceTree = "<group>"; };
+		2245F7ED24ED3EDC005B5B95 /* GLValueFloat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLValueFloat.h; sourceTree = "<group>"; };
+		2245F7EE24ED3EDC005B5B95 /* GuaList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuaList.h; sourceTree = "<group>"; };
+		2245F7EF24ED3EDC005B5B95 /* GLValueUserData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLValueUserData.h; sourceTree = "<group>"; };
+		2245F7F024ED3EDC005B5B95 /* GLData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLData.h; sourceTree = "<group>"; };
+		2245F7F124ED3EDC005B5B95 /* GLApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLApi.h; sourceTree = "<group>"; };
+		2245F7F224ED3EDC005B5B95 /* GLValueGuaPyObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLValueGuaPyObject.h; sourceTree = "<group>"; };
+		2245F7F324ED3EDC005B5B95 /* GLValueInt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLValueInt.h; sourceTree = "<group>"; };
+		2245F7F424ED3EDC005B5B95 /* GLObjectBuiltin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLObjectBuiltin.h; sourceTree = "<group>"; };
+		2245F7F524ED3EDC005B5B95 /* GLFunctionBuiltin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLFunctionBuiltin.h; sourceTree = "<group>"; };
+		2245F7F624ED3EDC005B5B95 /* GLValueType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLValueType.h; sourceTree = "<group>"; };
+		2245F7F724ED3EDC005B5B95 /* GuaTokens.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuaTokens.h; sourceTree = "<group>"; };
+		2245F7F824ED3EDC005B5B95 /* GuaUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuaUtils.h; sourceTree = "<group>"; };
+		2245F7FF24ED40E2005B5B95 /* test.gua */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.gua; sourceTree = "<group>"; };
+		2245F80424ED4350005B5B95 /* libgualang.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgualang.dylib; path = libs/libgualang.dylib; sourceTree = "<group>"; };
+		22F31A7A24ED512B00A83E4C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		2B824B8A24F3BDF40025F14A /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		2B824B8C24F3BDFB0025F14A /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		2B824B8E24F3BE010025F14A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		2B824B9024F3BE060025F14A /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		2B824B9224F3BE0D0025F14A /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		2B824B9424F3BE210025F14A /* libraylib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libraylib.a; path = libs/libraylib.a; sourceTree = "<group>"; };
+		2B824B9624F3BE2C0025F14A /* libChipmunk-Mac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libChipmunk-Mac.a"; path = "libs/libChipmunk-Mac.a"; sourceTree = "<group>"; };
+		2B824B9824F3BE3D0025F14A /* includes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = includes; sourceTree = "<group>"; };
+		2B824B9924F3BE6D0025F14A /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		2B824B9A24F3BE6D0025F14A /* utils.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = utils.c; sourceTree = "<group>"; };
+		2B824B9C24F3BE8E0025F14A /* guaList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = guaList.h; sourceTree = "<group>"; };
+		2B824B9D24F3BE8E0025F14A /* guaList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = guaList.c; sourceTree = "<group>"; };
+		2B824B9F24F3BEAB0025F14A /* guaScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = guaScene.h; sourceTree = "<group>"; };
+		2B824BA024F3BEAB0025F14A /* guaScene.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = guaScene.c; sourceTree = "<group>"; };
+		2B824BBA24F3BFFA0025F14A /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resources; sourceTree = "<group>"; };
+		BF2EA43424F0077D004D8E5A /* GLScopeStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLScopeStack.h; sourceTree = "<group>"; };
+		BF2EA43524F0077D004D8E5A /* GLScope.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLScope.h; sourceTree = "<group>"; };
+		BF2EA43624F0077D004D8E5A /* GLScopeGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLScopeGlobal.h; sourceTree = "<group>"; };
+		BF2EA43724F007E4004D8E5A /* GLApply.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLApply.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0066468D24EC31EF00B7C3DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B824B9324F3BE0D0025F14A /* CoreVideo.framework in Frameworks */,
+				2B824B9124F3BE070025F14A /* IOKit.framework in Frameworks */,
+				2B824B8F24F3BE010025F14A /* Cocoa.framework in Frameworks */,
+				2B824B8D24F3BDFB0025F14A /* GLUT.framework in Frameworks */,
+				2B824B9724F3BE2D0025F14A /* libChipmunk-Mac.a in Frameworks */,
+				2B824B8B24F3BDF40025F14A /* OpenGL.framework in Frameworks */,
+				2245F80524ED4350005B5B95 /* libgualang.dylib in Frameworks */,
+				2B824B9524F3BE210025F14A /* libraylib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0066468724EC31EE00B7C3DF = {
+			isa = PBXGroup;
+			children = (
+				2B824BBA24F3BFFA0025F14A /* resources */,
+				2B824B9824F3BE3D0025F14A /* includes */,
+				22F31A7A24ED512B00A83E4C /* main.c */,
+				2B824B9924F3BE6D0025F14A /* utils.h */,
+				2B824B9A24F3BE6D0025F14A /* utils.c */,
+				2B824B9C24F3BE8E0025F14A /* guaList.h */,
+				2B824B9D24F3BE8E0025F14A /* guaList.c */,
+				2B824B9F24F3BEAB0025F14A /* guaScene.h */,
+				2B824BA024F3BEAB0025F14A /* guaScene.c */,
+				2245F7FF24ED40E2005B5B95 /* test.gua */,
+				2245F7D324ED3EDC005B5B95 /* gualang_headers */,
+				0066469124EC31EF00B7C3DF /* Products */,
+				006646B924EC328900B7C3DF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0066469124EC31EF00B7C3DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0066469024EC31EF00B7C3DF /* gualib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		006646B924EC328900B7C3DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B824B9224F3BE0D0025F14A /* CoreVideo.framework */,
+				2B824B9024F3BE060025F14A /* IOKit.framework */,
+				2B824B8E24F3BE010025F14A /* Cocoa.framework */,
+				2B824B8C24F3BDFB0025F14A /* GLUT.framework */,
+				2B824B8A24F3BDF40025F14A /* OpenGL.framework */,
+				2245F80424ED4350005B5B95 /* libgualang.dylib */,
+				2B824B9624F3BE2C0025F14A /* libChipmunk-Mac.a */,
+				2B824B9424F3BE210025F14A /* libraylib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2245F7D324ED3EDC005B5B95 /* gualang_headers */ = {
+			isa = PBXGroup;
+			children = (
+				BF2EA43724F007E4004D8E5A /* GLApply.h */,
+				BF2EA43524F0077D004D8E5A /* GLScope.h */,
+				BF2EA43624F0077D004D8E5A /* GLScopeGlobal.h */,
+				BF2EA43424F0077D004D8E5A /* GLScopeStack.h */,
+				2245F7D424ED3EDC005B5B95 /* GLModule.h */,
+				2245F7D524ED3EDC005B5B95 /* GuaFoundation.h */,
+				2245F7D624ED3EDC005B5B95 /* GLLibrary.h */,
+				2245F7D724ED3EDC005B5B95 /* GLFFIType.h */,
+				2245F7D824ED3EDC005B5B95 /* GLString.h */,
+				2245F7D924ED3EDC005B5B95 /* GLVariable.h */,
+				2245F7DA24ED3EDC005B5B95 /* GuaType.h */,
+				2245F7DB24ED3EDC005B5B95 /* GuaFree.h */,
+				2245F7DC24ED3EDC005B5B95 /* GLValueCreate.h */,
+				2245F7DE24ED3EDC005B5B95 /* GLValueObjectBuiltin.h */,
+				2245F7DF24ED3EDC005B5B95 /* GuaMap.h */,
+				2245F7E024ED3EDC005B5B95 /* GuaArray.h */,
+				2245F7E124ED3EDC005B5B95 /* GLValue.h */,
+				2245F7E224ED3EDC005B5B95 /* GuaString.h */,
+				2245F7E324ED3EDC005B5B95 /* GLObject.h */,
+				2245F7E424ED3EDC005B5B95 /* GLMap.h */,
+				2245F7E524ED3EDC005B5B95 /* GLLibraryPython.h */,
+				2245F7E624ED3EDC005B5B95 /* GLFunctionBuiltinLegacy.h */,
+				2245F7E724ED3EDC005B5B95 /* _GLValue.h */,
+				2245F7E824ED3EDC005B5B95 /* GLValueOperators.h */,
+				2245F7E924ED3EDC005B5B95 /* GuaConfig.h */,
+				2245F7EA24ED3EDC005B5B95 /* GLStruct.h */,
+				2245F7EB24ED3EDC005B5B95 /* GLFunction.h */,
+				2245F7EC24ED3EDC005B5B95 /* GLArray.h */,
+				2245F7ED24ED3EDC005B5B95 /* GLValueFloat.h */,
+				2245F7EE24ED3EDC005B5B95 /* GuaList.h */,
+				2245F7EF24ED3EDC005B5B95 /* GLValueUserData.h */,
+				2245F7F024ED3EDC005B5B95 /* GLData.h */,
+				2245F7F124ED3EDC005B5B95 /* GLApi.h */,
+				2245F7F224ED3EDC005B5B95 /* GLValueGuaPyObject.h */,
+				2245F7F324ED3EDC005B5B95 /* GLValueInt.h */,
+				2245F7F424ED3EDC005B5B95 /* GLObjectBuiltin.h */,
+				2245F7F524ED3EDC005B5B95 /* GLFunctionBuiltin.h */,
+				2245F7F624ED3EDC005B5B95 /* GLValueType.h */,
+				2245F7F724ED3EDC005B5B95 /* GuaTokens.h */,
+				2245F7F824ED3EDC005B5B95 /* GuaUtils.h */,
+			);
+			path = gualang_headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0066468F24EC31EF00B7C3DF /* gualib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0066469724EC31EF00B7C3DF /* Build configuration list for PBXNativeTarget "gualib" */;
+			buildPhases = (
+				0066468C24EC31EF00B7C3DF /* Sources */,
+				0066468D24EC31EF00B7C3DF /* Frameworks */,
+				2245F80924ED436B005B5B95 /* Embed Libraries */,
+				0066468E24EC31EF00B7C3DF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gualib;
+			productName = chipmunk_raylib;
+			productReference = 0066469024EC31EF00B7C3DF /* gualib */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0066468824EC31EE00B7C3DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = wonder;
+				TargetAttributes = {
+					0066468F24EC31EF00B7C3DF = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 0066468B24EC31EE00B7C3DF /* Build configuration list for PBXProject "gualib" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0066468724EC31EE00B7C3DF;
+			productRefGroup = 0066469124EC31EF00B7C3DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0066468F24EC31EF00B7C3DF /* gualib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0066468C24EC31EF00B7C3DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B824B9E24F3BE8E0025F14A /* guaList.c in Sources */,
+				22F31A7B24ED512B00A83E4C /* main.c in Sources */,
+				2B824BA124F3BEAB0025F14A /* guaScene.c in Sources */,
+				2B824B9B24F3BE6D0025F14A /* utils.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0066469524EC31EF00B7C3DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0066469624EC31EF00B7C3DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0066469824EC31EF00B7C3DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/gualang_headers";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0066469924EC31EF00B7C3DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/gualang_headers";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0066468B24EC31EE00B7C3DF /* Build configuration list for PBXProject "gualib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0066469524EC31EF00B7C3DF /* Debug */,
+				0066469624EC31EF00B7C3DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0066469724EC31EF00B7C3DF /* Build configuration list for PBXNativeTarget "gualib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0066469824EC31EF00B7C3DF /* Debug */,
+				0066469924EC31EF00B7C3DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0066468824EC31EE00B7C3DF /* Project object */;
+}
